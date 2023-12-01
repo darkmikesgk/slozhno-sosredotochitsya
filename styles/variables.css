@@ -6,13 +6,20 @@
 :root {
   --bg-img: url(../images/cover-image-dark.png);
   --color-text: #000028;
+  --color-text-accent: #353430;
   --color-title: #db00ff;
   --color-decor: #ff0070;
-  --main-font: 'IBM Plex mono';
+  --color-text-section: #f1b2ce;
+  --color-title-decor: var(--color-decor);
+  --color-low-title: var(--color-decor);
+  --main-font: 'IBM Plex mono', sans-serif;
   --mobile-size: 23.4375rem;
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-normal: 1.125rem;
-  --border-button: 1px solid #353430;
+  --border-button: 1px solid var(--color-text-accent);
   --border-hover: 1px solid rgb(50 49 45 / 0.4);
-  --border-focus: 1px solid #353430;
+  --border-focus: 1px solid var(--color-text-accent);
+  --border-anchor: 1px solid var(--color-text-section);
+  --border-decor: 1px solid var(--color-decor);
+  --display: block;
 }

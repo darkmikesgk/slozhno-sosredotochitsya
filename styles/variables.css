@@ -2,3 +2,17 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-img: url(../images/cover-image-dark.png);
+  --color-text: #000028;
+  --color-title: #db00ff;
+  --color-decor: #ff0070;
+  --main-font: 'IBM Plex mono';
+  --mobile-size: 23.4375rem;
+  --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-normal: 1.125rem;
+  --border-button: 1px solid #353430;
+  --border-hover: 1px solid rgb(50 49 45 / 0.4);
+  --border-focus: 1px solid #353430;
+}

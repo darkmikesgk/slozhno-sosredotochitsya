@@ -11,6 +11,7 @@
   */
   --color-decoration: #ff8dcb;
   --color-decoration-dark: #ff0070;
+  --color-text-dark: #000028;
   --color-bg: #fff1f7;
   --color-title: #ffc2e6;
   --color-text: #f1b2ce;
@@ -25,11 +26,6 @@
 
 .page.theme_light .decorated-item {
   display: none;
-}
-
-.page {
-  background-color: var(--color-bg);
-  background-image: var(--bg-image);
 }
 
 .page.theme_light .header::before {

@@ -10,16 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --color-decoration: #ff8dcb;
+  --color-decoration-dark: #ff0070;
   --color-bg: #fff1f7;
   --color-title: #ffc2e6;
-  --color-text: #353430;
+  --color-text: #f1b2ce;
   --color-text-accent: #353430;
   --bg-image: url(../images/cover-image-light.png);
-  --border-decor: 1px solid var(--color-text);
-  --border-button: 1px solid rgb(255 0 112 / 0.4);
+  --border-decor: 1px solid var(--color-text-accent);
+  --border-button: 1px solid var(--color-text-accent);
   --border-hover: 1px solid rgb(50 49 45 / 0.4);
   --border-focus: 1px solid var(--color-text-accent);
-  --border-anchor: 1px solid var(--color-text);
+  --border-anchor: 1px solid var(--color-text-accent);
 }
 
 .page.theme_light .decorated-item {
@@ -37,37 +38,45 @@
 }
 
 .page.theme_light .header__theme-menu-item {
-  color: var(--color-text);
+  color: var(--color-text-accent);
 }
 
 .page.theme_light .title-decor {
-  color: var(--color-text);
+  color: var(--color-text-accent);
 }
 
 .page.theme_light .title__section {
-  color: var(--color-text);
+  color: var(--color-text-accent);
+}
+
+.page.theme_light .text-content {
+  color: var(--color-text-accent);
 }
 
 @media (prefers-color-scheme: light) {
 
   :root {
     --color-decoration: #ff8dcb;
+    --color-decoration-dark: #ff0070;
+    --color-text-dark: #000028;
     --color-bg: #fff1f7;
     --color-title: #ffc2e6;
-    --color-text: #353430;
+    --color-text: #f1b2ce;
     --color-text-accent: #353430;
     --bg-image: url(../images/cover-image-light.png);
-    --font-main: 'IBM Plex mono';
-    --font-size-normal: 1.125rem;
-    --border-decor: 1px solid var(--color-text);
-    --border-button: 1px solid rgb(255 0 112 / 0.4);
+    --border-decor: 1px solid var(--color-text-accent);
+    --border-button: 1px solid var(--color-text-accent);
     --border-hover: 1px solid rgb(50 49 45 / 0.4);
     --border-focus: 1px solid var(--color-text-accent);
-    --border-anchor: 1px solid var(--color-text);
+    --border-anchor: 1px solid var(--color-text-accent);
   }
 
   .decorated-item {
     display: none;
+  }
+
+  .page.theme_dark .decorated-item {
+    display: block;
   }
 
   .page {
@@ -80,15 +89,40 @@
     filter: none;
   }
 
+  .page.theme_dark .header::before {
+    background-image: url(../images/Ellipse\ 4.svg);
+    filter: drop-shadow(0 0 4px var(--color-decoration));
+  }
+
   .header__theme-menu-item {
-    color: var(--color-text);
+    color: var(--color-text-accent);
+  }
+
+  .page.theme_dark .header__theme-menu-item {
+    color: var(--color-decoration-dark);
   }
 
   .title-decor {
-    color: var(--color-text);
+    color: var(--color-text-accent);
+  }
+
+  .page.theme_dark .title-decor {
+    color: var(--color-text-dark);
   }
 
   .title__section {
+    color: var(--color-text-accent);
+  }
+
+  .page.theme_dark .title__section {
+    color: var(--color-decoration);
+  }
+
+  .text-content {
+    color: var(--color-text-accent);
+  }
+
+  .page.theme_dark .text-content {
     color: var(--color-text);
   }
 }

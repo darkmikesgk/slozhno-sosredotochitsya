@@ -10,19 +10,21 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --color-decoration: #ff0070;
-  --color-bg: #000028;
+  --color-bg: #000028; /*(and h3)*/
   --color-title: #db00ff;
   --color-text: #f1b2ce;
   --color-text-accent: #353430;
   --bg-image: url(../images/cover-image-dark.png);
+  --font-main: 'IBM Plex mono', sans-serif;
+  --font-size-normal: 1.125rem;
   --border-decor: 1px solid var(--color-decoration);
   --border-button: 1px solid var(--color-decoration);
-  --border-hover: 1px solid rgb(50 49 45 / 0.4);
-  --border-focus: 1px solid var(--color-text-accent);
+  --border-button-active: 1px solid var(--color-decoration);
+  --border-hover: 1px solid rgb(255 0 112 / 0.4);
+  --border-focus: 1px solid var(--color-decoration);
   --border-anchor: 1px solid var(--color-text);
-}
-
-.page {
-  background-color: var(--color-bg);
-  background-image: var(--bg-image);
+  --font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-title-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --padding-mobile: 10px;
+  --padding-desktop: 20px;
 }

@@ -142,14 +142,6 @@
   background-color: var(--color-decoration);
 }
 
-.title-decor-unusual {
-  margin-top: 10px;
-}
-
-.title-decor-low-weight {
-  font-weight: 400;
-}
-
 .content__section {
   display: grid;
   grid-template-rows: min-content;
@@ -200,6 +192,11 @@
   outline: var(--border-anchor);
 }
 
+.content.concentration .title__section {
+  grid-column: 1/1;
+  grid-row: 1 / 3;
+}
+
 .card__content {
   display: grid;
   grid-template-rows: min-content;
@@ -239,7 +236,6 @@
 
   .page {
     gap: 3.75rem;
-    max-width: 64rem;
   }
 
   .decorated-zone {
@@ -301,10 +297,6 @@
     grid-column: 1/5;
   }
 
-  .content.concentration .title__section {
-    grid-column: 1/1;
-  }
-
   .content.tablet_concentration .text-content-container {
     grid-column: 2/2;
     grid-row: 1/5;
@@ -314,6 +306,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .title-decor {
+    grid-column: 2 / 4;
+  }
+
+  .card__content .title-decor {
+    grid-column: 1 /4;
   }
 
   .card__content .text-content-container {
@@ -357,11 +357,10 @@
   }
 }
 
-@media (64rem <= width <= 90rem) {
+@media (64rem <= width) {
 
   .page {
     gap: 3.75rem;
-    max-width: 90rem;
   }
 
   .decorated-zone {
@@ -420,6 +419,10 @@
     grid-column: 2 / span 2;
   }
 
+  .title-decor {
+    grid-column: 2 / 4;
+  }
+
   .content.tablet_resolution .title__section {
     grid-row: 1/1;
   }
@@ -428,23 +431,19 @@
     grid-column: 1/5;
   }
 
-  .content.concentration .title__section {
-    grid-column: 1/1;
-  }
-
   .content.tablet_resolution .text-content-container:nth-child(2) {
     grid-column: 1/2;
     grid-row: 2/5;
   }
 
   .content.tablet_resolution .text-content-container:nth-child(3) {
-    grid-column: 2/3;
-    grid-row: 2/5;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
   }
 
   .content.tablet_resolution .text-content-container:nth-child(4) {
-    grid-column: 3/4;
-    grid-row: 2/5;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
   }
 
   .card__content {
@@ -453,9 +452,13 @@
     gap: 20px;
   }
 
+  .card__content .title-decor {
+    grid-column: 1 / 4;
+  }
+
   .card__content .text-content-container {
     grid-column: 1 / span 3;
-    grid-row: 1/1;
+    grid-row: 1 / 1;
     max-height: min-content;
   }
 
